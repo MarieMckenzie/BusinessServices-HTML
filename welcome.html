@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+
+		      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+
+
+</head>
+
+</*body style="background-color: lightblue">
+<body background="welcome background.jpg">
+
+			<h1 style="font-size:45px"><center>
+			<p style=color:#80000B><u>Welcome to CFMM</u></center> </h1></p>
+			
+			<h3 style="text-align:center"><i>"For the people, By the people"</i></h3><br>
+			<h2 style=color:#165A00><center>Here at CFMM we create values for our costumers by 
+				allowing them to create their own style on their clothing
+				and ensuring they are completely satisfied
+				with our service</center></h2>
+	<ul>
+
+    <nav class="menu">
+        <ul class="clearfix">
+            
+         <li>
+
+         <a href="#" style ="color:blue;">MENU<span class="arrow"></span></a>
+  
+                <ul class="sub-menu">
+         
+				<nav>
+				<ul>
+        <li ><a href="members.html">MEMBERS</a></li>
+        <li ><a href="feedback page.html">FEEDBACK</a></li>
+        <li ><a href="Proforma.html">PERFORMA INVOICE</a></li>
+        <li ><a href="about.html">ABOUT</a></li>
+		<li ><a href="Service.html">SERVICE</a></li>
+        </ul>
+  </li>
+</ul>
+</nav>
+
+<table>
+	<tr height="40px"></tr>
+	<tr class="spbg">
+		<td class="buffer"></td>
+		<td class="spbgtd" ><img id="imgBanner" src="p2.jpg"><p id="blah"></p><br>
+		<td class="buffer"></td>
+
+	</tr>
+	<tr height="40px"></tr>
+
+</table>
+
+
+
+
+<script type="text/javascript">
+            var picPaths = ['matthew.jpg','marie.jpg', 'faydeen.jpg', 'conrod.jpg'];
+            var curPic = -1;
+            //preload the images for smooth animation
+            var imgO = new Array();
+            for(i=0; i < picPaths.length; i++) {
+                imgO[i] = new Image();
+                imgO[i].src = picPaths[i];
+            }
+
+            function swapImage() {
+                curPic = (++curPic > picPaths.length-1)? 0 : curPic;
+                imgCont.src = imgO[curPic].src;
+               // setTimeout(swapImage,2000);
+                 setTimeout(swapImage,2000);
+            }
+
+          
+           function change(){
+           	var line = getElementById("line");
+           	line.color = teal;
+
+           	document.hr.color = teal;
+           }
+
+            window.onload=function() {
+                imgCont = document.getElementById('imgBanner');
+                swapImage();
+                
+
+
+
+
+            }
+        </script>
+</body>
+
+</html>

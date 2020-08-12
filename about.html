@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+		  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+
+		      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+<title>CFMM Website</title>
+</head>
+<style media="screen" type="text/css">
+  
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+  
+/*----- Menu Outline -----*/
+ 
+.menu a {
+    transition:all linear 0.15s;
+    color:grey;
+}
+  
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+  
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:center;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+  
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+  
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:grey;
+}
+  
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+  
+.sub-menu {
+    width:100%;
+    padding:5px 0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:white;
+}
+  
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+  
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+  
+.sub-menu li a:hover, .sub-menu .current-item a {
+  color:white;
+    background:grey;
+   
+}
+
+html,body
+{
+	width:100%; 
+	height:100%;
+	margin:0;
+	padding:0;	
+}
+body
+{
+	
+	background-size:10em;	
+}
+#banner
+{
+	height:14em;
+	background-size:cover;
+	position:relative;	
+}
+#wrapper
+{
+	width:60em; 
+	background:grey;
+	margin:auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-sizing:border-box;
+	overflow:hidden;	
+}
+#wrapper>header
+{
+	width:100%; 
+	background: grey;
+	color:#fff;
+	padding:0.3em;
+	box-sizing:border-box;
+}
+#backdrop
+{
+	width:100%;
+	height:20em;
+	background: url(banner.png);
+	background-size:100% 100%;	
+}
+#left
+{
+	width:23%;
+	min-height:20em; 
+	background:grey;
+	float:left;
+	padding:0.4em;
+	box-sizing:border-box;
+	
+}
+#left>form
+{
+	width:100%;
+	margin:auto;
+	margin-top:1em;
+}
+#left>form>input
+{
+	width:100%;
+	margin:auto;
+	border:1px solid white;
+	padding:0.3em;
+	margin-bottom:0.5em;
+	box-sizing:border-box;
+}
+#center
+{
+	width:77%;
+	background:#fff;
+	float:left;
+	padding:0.5em;
+	box-sizing:border-box;	
+	border-left:1px solid white;
+}
+#avatar
+{
+	width:8em; 
+	height:8em;
+	border:2px solid #fff;
+	display:block;
+	position:absolute;
+	top:14em;
+	border-radius:6px;
+	background: url(av.jpg);
+	background-size:cover;	
+}
+#center>header
+{
+	width:100%;
+	color:white; 
+	background: white;
+	padding:0.5em;
+	box-sizing:border-box;	
+}
+#left>ul
+{
+	width:100%;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#left>ul>li>a
+{
+	width:100%;
+	display:block;
+	background:white;
+	text-decoration:none;
+	padding:0.3em;
+	color:white;
+	margin-bottom:0.3em;
+	cursor:pointer;
+	box-sizing:border-box;
+	
+}
+#map {
+        width: 100%;
+        height: 300px;
+        background-color: grey;
+      }
+footer
+{
+	width:100%;
+	clear:both;
+	height:5em; 
+	background:grey;
+	color:grey;	
+}
+.social
+{
+	width:2em ;
+	display:inline-block;
+	height:2em;
+	**border:1px solid white;
+	border-radius:5px;	
+	background: url(social.fw.png);
+	background-size:8em 4em;
+	box-sizing:border-box;
+	cursor:pointer;
+}
+
+</style>
+<body id="view">
+<div id="wrapper">
+<header>
+<font style="font-family:'Comic Sans MS', cursive;">CFMM Design LTD</font>
+</header>
+<div id="backdrop" rowspan="1">
+</div>
+<td id="banner" colspan="3">
+	<span id="avatar" ></span>
+</td>
+
+<section id="left">
+
+    <nav class="menu">
+        <ul class="clearfix">
+            
+         <li>
+
+		 
+         <a href="#" style ="color:white;">MENU<span class="arrow"></span></a>
+  
+                <ul class="sub-menu">
+         
+				<nav>
+				<ul>
+        <li ><a href="welcome.html">HOME</a></li>
+        <li ><a href="members.html">MEMBERS</a></li>
+        <li ><a href="feedback page.html">FEEDBACK</a></li>
+        <li ><a href="Proforma.html">PERFORMA INVOICE</a></li>
+        <li ><a href="about.html">ABOUT</a></li>
+		<li ><a href="Service.html">SERVICE</a></li>
+        </ul>
+  </li>
+</ul>
+</nav>
+<hr style="border:2px solid #fff;" />
+<div style="width:100%; text-align:center; margin-top:1em;">
+<a class="social" style="background-position:-0em 2em"></a>
+<a class="social" style="background-position:-2em 2em"></a>
+<a class="social" style="background-position:-4em 2em"></a>
+<a class="social" style="background-position:-6em 2em"></a>
+
+
+<img src="pic1.jpg" style="width:6em; margin-top:1em;" /> <br/>
+<img src="pic2.jpg" style="width:6em; margin-top:1em;" /><br/>
+<img src="pic3.jpg" style="width:6em; margin-top:1em;" /><br/>
+<img src="pic4.jpg" style="width:6em; margin-top:1em;" /><br/>
+</div>
+
+
+</section>
+<section id="center">
+
+
+<center>
+<br><br><br><h1>CFMM Design Ltd <p></h1>
+
+
+			Is a company that was established by a group of students from the University of technology
+			(UTECH), where the website cover the ability for persons interested in purchasing shirts and printing logos on them to get that 
+			service done. On this website our customers will be able to select the type of shirts they would like and the colour and choose the
+			preferred logo they would want. 
+			
+</center><br><br><br>
+
+</table>
+<div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 18.0179062, lng: -76.7392808};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgUJm4YguCvL3LVqoXziwtzkS0DA1rUmk&callback=initMap">
+    </script>
+
+<table >
+	<tr align="center">
+		<td><h3>OFFICE HOURS & LOCATION</h3></td>
+	</tr>
+	<tr>
+	<td align="center">Hours:   Monday-Thursday, 10am-5pm</td>
+	</tr>
+	<tr>
+	<td align="center">Hours:   Fri-Saturday, 10:30am-4:30pm</td>
+	</tr>
+	<tr>
+	<td align="center">CLOSED on Sundays and on holidays!!!</td>
+	</tr>
+	<tr>
+	<td align="center">Address:  UTech, 237 Old Hope Rd, KGN 6 </td>
+	</tr>	
+</table><br><br><br>
+
+<center><table class="blah">
+
+
+
+</table></center>
+
+
+
+<table class="footer">
+<tr>
+	<td colspan="5"><center><h4 id ="small">
+Follow us on Twitter: @CFMMMLtd | 
+Follow us on Instagram: @CFMMLtd | 
+Like our page on Facebook:  CFMM Design LTD
+</h4 ></center>
+</tr><br>
+
+
+
+<tr>
+
+		<td width="25%"></td>
+
+	<td width="22%"><a href="https://twitter.com/?lang=en"><img class="about" src="twit.png" alt="HTML5 Icon" width="128" height="128"></a></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	<td width="22%"><a href="https://instgram.com/?lang=en"><img class="about" src="insta.png" alt="HTML5 Icon" width="128" height="128"></a></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	<td width="22%"><a href="https://facebook.com/?lang=en"><img class="about" src="fb.png" alt="HTML5 Icon" width="128" height="128"></a></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	<td width="22%"></td>
+	</tr>
+</center>
+</table><br><br>
+
+
+
+</section>
+
+
+<footer>
+ <h4 id="small" style="color:white;">   Telephone:   424-4474 (FLOW) | 823-7645 (DIGICEL)  <br> Email:CFMMltd@gmail.com</h4>
+
+<h2 id ="small" style="color:white;">COPYRIGHT</h2>
+<h2 id ="small" style="color:white;">CFMM Design Ltd &copy;</h2>
+<br><br><br>
+</footer>
+
+<script>
+
+</script>
+</body>
+</html>

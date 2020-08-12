@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+		  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+
+		      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+<title>CFMM Website</title>
+</head>
+<style media="screen" type="text/css">
+  
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+  
+/*----- Menu Outline -----*/
+ 
+.menu a {
+    transition:all linear 0.15s;
+    color:grey;
+}
+  
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+  
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:center;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+  
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+  
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:grey;
+}
+  
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+  
+.sub-menu {
+    width:100%;
+    padding:5px 0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:white;
+}
+  
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+  
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+  
+.sub-menu li a:hover, .sub-menu .current-item a {
+  color:white;
+    background:grey;
+   
+}
+
+html,body
+{
+	width:100%; 
+	height:100%;
+	margin:0;
+	padding:0;	
+}
+body
+{
+	
+	background-size:10em;	
+}
+#banner
+{
+	height:14em;
+	background-size:cover;
+	position:relative;	
+}
+#wrapper
+{
+	width:60em; 
+	background:grey;
+	margin:auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-sizing:border-box;
+	overflow:hidden;	
+}
+#wrapper>header
+{
+	width:100%; 
+	background: grey;
+	color:#fff;
+	padding:0.3em;
+	box-sizing:border-box;
+}
+#backdrop
+{
+	width:100%;
+	height:20em;
+	background: url(banner.png);
+	background-size:100% 100%;	
+}
+#left
+{
+	width:23%;
+	min-height:20em; 
+	background:grey;
+	float:left;
+	padding:0.4em;
+	box-sizing:border-box;
+	
+}
+#left>form
+{
+	width:100%;
+	margin:auto;
+	margin-top:1em;
+}
+#left>form>input
+{
+	width:100%;
+	margin:auto;
+	border:1px solid white;
+	padding:0.3em;
+	margin-bottom:0.5em;
+	box-sizing:border-box;
+}
+#center
+{
+	width:77%;
+	background:#fff;
+	float:left;
+	padding:0.5em;
+	box-sizing:border-box;	
+	border-left:1px solid white;
+}
+#avatar
+{
+	width:8em; 
+	height:8em;
+	border:2px solid #fff;
+	display:block;
+	position:absolute;
+	top:14em;
+	border-radius:6px;
+	background: url(av.jpg);
+	background-size:cover;	
+}
+#center>header
+{
+	width:100%;
+	color:white; 
+	background: white;
+	padding:0.5em;
+	box-sizing:border-box;	
+}
+#left>ul
+{
+	width:100%;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#left>ul>li>a
+{
+	width:100%;
+	display:block;
+	background:white;
+	text-decoration:none;
+	padding:0.3em;
+	color:white;
+	margin-bottom:0.3em;
+	cursor:pointer;
+	box-sizing:border-box;
+	
+}
+footer
+{
+	width:100%;
+	clear:both;
+	height:5em; 
+	background:grey;
+	color:grey;	
+}
+.social
+{
+	width:2em ;
+	display:inline-block;
+	height:2em;
+	**border:1px solid white;
+	border-radius:5px;	
+	background: url(social.fw.png);
+	background-size:8em 4em;
+	box-sizing:border-box;
+	cursor:pointer;
+}
+
+</style>
+<body id="view">
+<div id="wrapper">
+<header>
+<font style="font-family:'Comic Sans MS', cursive;">CFMM Design LTD</font>
+</header>
+<div id="backdrop" rowspan="1">
+</div>
+<td id="banner" colspan="3">
+	<span id="avatar" ></span>
+</td>
+
+<section id="left">
+</*form>
+</*br></*br>
+</*font style=" font-weight:bold;color:white;"Login/*font>
+</*input type="text" placeholder="Username" />
+</*input type="password" placeholder="Password" />
+</*input type="submit" style="padding:0 0.3em;; width: auto; float:right; clear:right;" value="Login" />
+</*form>
+</*br></*br>
+</*hr style="border:2px solid #fff;" />
+</*ul>
+
+    <nav class="menu">
+        <ul class="clearfix">
+            
+         <li>
+
+         <a href="#" style ="color:white;">MENU<span class="arrow"></span></a>
+  
+                <ul class="sub-menu">
+         
+				<nav>
+				<ul>
+        <li ><a href="welcome.html">HOME</a></li>
+        <li ><a href="members.html">MEMBERS</a></li>
+        <li ><a href="feedback page.html">FEEDBACK</a></li>
+        <li ><a href="Proforma.html">PERFORMA INVOICE</a></li>
+        <li ><a href="about.html">ABOUT</a></li>
+		<li ><a href="Service.html">SERVICE</a></li>
+        </ul>
+  </li>
+</ul>
+</nav>
+<div style="width:100%; text-align:center; margin-top:1em;">
+<a class="social" style="background-position:-0em 2em"></a>
+<a class="social" style="background-position:-2em 2em"></a>
+<a class="social" style="background-position:-4em 2em"></a>
+<a class="social" style="background-position:-6em 2em"></a>
+
+<img src="pic1.jpg" style="width:6em; margin-top:1em;" /> <br/>
+<img src="pic2.jpg" style="width:6em; margin-top:1em;" /><br/>
+<img src="pic3.jpg" style="width:6em; margin-top:1em;" /><br/>
+<img src="pic4.jpg" style="width:6em; margin-top:1em;" /><br/>
+</div>
+
+
+</section>
+<section id="center">
+
+			<br>
+			<br>
+			<h1 style=color:blue><center>Tables showing personal information for each group member</center></h1>
+			<br>
+			<table border = "2" cellpadding ="15" cellspacing = "2">
+			<caption><b>GROUP MEMBER 1: PERSONAL INFO</b></caption>
+			<th colspan = "6" style = "background-color:green;color:white">Member 1 </th>
+			<center><img src="matthew.jpg" style="width:6em; mrgin-top:1em;"><img src="marie.jpg" style="width:6em; mrgin-top:1em;"><img src="faydeen.jpg" style="width:6em; mrgin-top:1em;"><img src="conrod.jpg" style="width:6em; mrgin-top:1em;"></center>
+			<br>
+			<br>
+			<tr>
+				<th colspan = "1" style = "background-color:blue;color:yellow">NAME</th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">ID NUMBER </th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">AGE </th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">CITIZENSHIP</th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">COURSES ENROLLED IN</th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">TRAITS/SKILLS </th>
+			
+			</tr>
+			<tr>
+			<td>Matthew Spence</td>
+				<td>1603371</td>
+				<td>20</td>
+				<td>Jamaica</td>
+				<td>
+				<ol type = "i">
+					<li>Web Programming</li>
+					<li>Database Design</li>
+					<li>Intro To Statistics</li>
+					<li>Academic Writing 2</li>
+				</ol>
+				<td>
+				<ol type = "i">
+					<li>Plumbing</li>
+					<li>Musician</li>
+					<li>Mechanic</li>
+				</ol>
+				</td>
+			</tr>
+			<br>
+			<br>
+			
+			<table border = "2" cellpadding ="14" cellspacing = "2">
+			<caption><b>GROUP MEMBER 2: PERSONAL INFO</b></caption>
+			<br>
+			<br>
+			<th colspan = "6" style = "background-color:green;color:white">Member 2 </th>
+			
+			<tr>
+				<th colspan = "1" style = "background-color:blue;color:yellow">NAME</th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">ID NUMBER </th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">AGE </th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">CITIZENSHIP</th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">COURSES ENROLLED IN</th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">TRAITS/SKILLS </th>
+			
+				
+			</tr>
+			<tr>
+				<td>Marie McKenzie</td>
+				<td>1602967</td>
+				<td>20</td>
+				<td>Jamaica</td>
+				<td>
+				<ol type = "i">
+					<li>Web Programming</li>
+					<li>Data Structures</li>
+				</ol>
+				<td>
+				<ol type = "i">
+					<li>Crocheting</li>
+					<li>Hair Dressing</li>
+					<li>Graphics</ol>
+				</td>
+			</tr>
+			<br>
+			<br>
+			
+			<table border = "2" cellpadding ="15" cellspacing = "2">
+			<br>
+			<br>
+			<caption><b>GROUP MEMBER 3: PERSONAL INFO</b></caption>
+			<th colspan = "6" style = "background-color:green;color:white">Member 3 </th>
+			
+				
+			<tr>
+				<th colspan = "1" style = "background-color:blue;color:yellow">NAME</th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">ID NUMBER </th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">AGE </th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">CITIZENSHIP</th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">COURSES ENROLLED IN</th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">TRAITS/SKILLS </th>
+			
+				
+			</tr>
+			<tr>
+				<td>Faydeen Wright</td>
+				<td>1703205</td>
+				<td>19</td>
+				<td>Jamaica</td>
+				<td>
+				<ol type = "i">
+					<li>Animation Tools ii</li>
+					<li>Animation Theory ii</li>
+					<li>ColLege Math 1B</li>
+					<li>Writing Workshop 1</li>
+					<li>Dimensional Drawing</li>
+					<li>Web Programming</li>
+					<li>Community Service</li>
+				</ol>
+				<td>
+				<ol type = "i">
+					<li>Designing</li>
+					<li>Creative Writing</li>
+					<li>Fashion Designing</l
+				</ol>
+				</td>
+			</tr>
+			<br>
+			<br>
+			
+			
+			<table border = "2" cellpadding ="15" cellspacing = "2">
+			<caption><b>GROUP MEMBER 4: PERSONAL INFO</b></caption>
+			<br>
+			<br>
+			<th colspan = "6" style = "background-color:green;color:white">Member 4 </th>
+		
+			<tr>
+				
+				<th colspan = "1" style = "background-color:blue;color:yellow">NAME</th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">ID NUMBER </th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">AGE </th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">CITIZENSHIP</th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">COURSES ENROLLED IN</th>
+				<th colspan = "1" style = "background-color:blue;color:yellow">TRAITS/SKILLS </th>
+			
+			</tr>
+			<tr>
+				<td>Conrod Smith</td>
+				<td>1503430</td>
+				<td>21</td>
+				<td>Jamaica</td>
+				<td>
+				<ol type = "i">
+					<li>Web Programming</li>
+					<li>Computer Logics and Digital Design</li>
+					<li>Academic Writing 2</li>
+					<li>Software engineering: Analysis and design</li>
+				</ol>
+				<td>
+				<ol type = "i">
+					<li>Chef</li>
+					<li>Banquet Server</li>
+					<li>Desktop publishing</li>
+				</ol>
+				</td>
+			</tr>
+
+
+
+
+
+</section>
+
+	
+</body>
+</html>
